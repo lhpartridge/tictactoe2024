@@ -20,6 +20,10 @@ header {
     font-size: calc(24px + (56 - 24) * ((100vw - 300px) / (1600 - 300)));
 }
 
+#gameStatus {
+    color: white;
+}
+
 .form-label {
     color: white;
     font-family: sans-serif;
@@ -49,3 +53,22 @@ header {
     background-color: rgb(231, 236, 240);
 }
 
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.wins {
+    text-decoration: underline;
+}
+
+.win-count {
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    border: 2px solid navy;
+    text-align: left;
+}
