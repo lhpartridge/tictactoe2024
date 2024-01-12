@@ -180,9 +180,11 @@ class Game {
 
         if (xWinTotal == 3) {
             this.gameStatus.innerText = `${this.players.player1} is the SUPREME VICTOR!`;
+            document.getElementById('xWins').style.backgroundImage="url(media/confetti.gif)"; 
             this.gameReload();
         } else if (oWinTotal == 3) {
             this.gameStatus.innerText = `${this.players.player2} is the SUPREME VICTOR!`;
+            document.getElementById('oWins').style.backgroundImage="url(media/confetti.gif)"; 
             this.gameReload();
         } else {
             return;
@@ -202,6 +204,8 @@ class Game {
             this.winCount.o = 0;
             document.getElementById('player1').value = '';
             document.getElementById('player2').value = '';
+            document.getElementById('xWins').style.backgroundImage="none"; 
+            document.getElementById('oWins').style.backgroundImage="none"; 
         }, 3000);
     }
 }
